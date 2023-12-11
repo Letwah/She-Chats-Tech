@@ -1,15 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
-
 import { HOME } from "../store/types";
 
 const initialState = {
   page: HOME,
   burgerOpen: false,
 
-  cursor: {
-    position: { left: 0, top: 0 },
-    active: false,
-  },
+  // cursor: {
+  //   position: { left: 0, top: 0 },
+  //   active: false,
+  // },
 };
 
 const appSlice = createSlice({
