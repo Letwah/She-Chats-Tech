@@ -1,7 +1,8 @@
+import { ReactSVG } from "react-svg";
 const Home = () => {
   return (
     <>
-      <h1>SHE CHATS TECH</h1>
+      <ReactSVG src="src/assets/images/logo.svg" />
     </>
   );
 };
