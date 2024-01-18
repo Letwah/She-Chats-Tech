@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./styles.css";
 
-const links = ["about", "contact"];
+const links = ["about", "contact", "home"];
 
 const Menu = () => {
   const navigate = useNavigate();
@@ -14,7 +14,11 @@ const Menu = () => {
 
   const onClick = (href) => {
     toggleMenu();
-    navigate("/" + href); // Add '/' for proper nav
+    if (href === "home") {
+      navigate("/");
+    } else {
+      navigate("/" + href);
+    }
   };
 
   return (

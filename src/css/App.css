@@ -19,3 +19,16 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+@media screen and (min-width: 889px) {
+  .contentGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
