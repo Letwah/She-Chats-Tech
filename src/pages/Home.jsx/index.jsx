@@ -1,38 +1,37 @@
 import { ReactSVG } from "react-svg";
-
+// import { useDispatch } from "react-redux";
 import highResPortrait from "../../assets/images/Em-Bayley-Melendez_color.jpg";
-
 import logo from "../../assets/images/logo.svg";
 
 import "./styles.css";
 import PixelatedImage from "../../components/PixelatedImage.jsx";
+// import { setCursorType } from "../../redux/appSlice";
 
 const Home = () => {
+  // const dispatch = useDispatch();
+
   return (
     <>
       <div className="contentGrid">
         <div>
           <ReactSVG src={logo} />
         </div>
-        {/* <div className="imageContainer">
+
+        <div className="imageContainer">
           <img
             key="high-res"
             src={highResPortrait}
             alt="High Res"
             loading="lazy"
-            className="pixelated"
-            // style="--f-n:30;--f-m:30;"
+            className="originalImage"
           />
-        </div> */}
 
-        <div className="imageContainer">
           <PixelatedImage
             src={highResPortrait}
-            pixelSizeN={300}
-            pixelSizeM={30}
+            pixelSizeN={50}
+            pixelSizeM={50}
           />
         </div>
-        {/* <Pixelated src={highResPortrait} alt="hi res" pixelSize={40} /> */}
       </div>
     </>
   );

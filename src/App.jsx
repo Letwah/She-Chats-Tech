@@ -9,7 +9,7 @@ import About from "./pages/About.jsx ";
 import Contact from "./pages/Contact.jsx";
 import Menu from "./components/Menu.jsx";
 
-import Cursor from "./components/Cursor.jsx";
+// import Cursor from "./components/Cursor.jsx";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -33,7 +33,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Cursor />
+        {/* <Cursor /> */}
       </div>
     </>
   );
