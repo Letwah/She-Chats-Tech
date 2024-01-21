@@ -1,0 +1,65 @@
+/* body {
+  margin: 0 auto;
+} */
+
+h1 strong {
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.aboutWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  justify-items: center;
+}
+
+.aboutBio {
+  font-size: 2rem;
+  height: 450px;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* pixelated image */
+
+.pixelated {
+  mask: paint(fragmentation);
+  -webkit-mask: paint(fragmentation);
+}
+
+.imageContainer {
+  width: 450px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  border-radius: 2rem;
+  /* -webkit-mask-image: url(../../assets/masks/Subtract3.png);
+  mask-image: url(../../assets/masks/Subtract3.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat; */
+}
+
+.originalImage,
+.canvasPixelated {
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  border: 2px solid var(--text-color);
+}
+
+.canvasPixelated {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.imageContainer:hover .canvasPixelated {
+  opacity: 0;
+}
