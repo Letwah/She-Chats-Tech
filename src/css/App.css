@@ -158,6 +158,7 @@ button:hover {
 
 .contentGrid {
   display: grid;
+  margin-top: 2rem;
   grid-template-columns: 1fr;
   justify-items: center;
   border-top: 1px solid red;

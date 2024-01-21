@@ -1,5 +1,5 @@
 // import { useDispatch } from "react-redux";
-import Header from "../../components/Header.jsx";
+// import Header from "../../components/Header.jsx";
 
 import "./styles.css";
 import About from "../About.jsx ";
@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="contentGrid">
         <About />
       </div>

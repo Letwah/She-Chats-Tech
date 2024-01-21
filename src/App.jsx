@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { selectPage, setPage } from "./redux/appSlice";
 import "./css/App.css";
-// import Header from "./components/Header.jsx";
+import Header from "./components/Header.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx ";
 import Contact from "./pages/Contact.jsx";
@@ -26,7 +26,7 @@ const App = () => {
   return (
     <>
       <div className="App">
-        {/* <Header /> */}
+        <Header />
         <Menu />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -35,6 +35,30 @@ const About = () => {
           />
         </div>
       </div>
+      <div className="intro">
+        <h1>
+          <strong>She Chats Tech</strong> was created as a Community for women
+          aspiring to be and women in tech from non-tech backgrounds.
+        </h1>
+      </div>
+      <div className="intro">
+        <h1>
+          <strong>She Chats Tech</strong> was created as a Community for women
+          aspiring to be and women in tech from non-tech backgrounds.
+        </h1>
+      </div>
+      <div className="intro">
+        <h1>
+          <strong>She Chats Tech</strong> was created as a Community for women
+          aspiring to be and women in tech from non-tech backgrounds.
+        </h1>
+      </div>
+      <div className="intro">
+        <h1>
+          <strong>She Chats Tech</strong> was created as a Community for women
+          aspiring to be and women in tech from non-tech backgrounds.
+        </h1>
+      </div>
     </>
   );
 };

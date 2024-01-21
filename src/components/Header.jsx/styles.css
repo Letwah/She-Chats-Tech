@@ -1,37 +1,32 @@
-/* .header {
-  display: flex;
-  justify-content: center;
-  transition: transform 0.3s ease;
-  z-index: 10;
+/* Initial State of the Header */
+.header {
+  transition: height 0.3s ease, position 0.3s ease;
+  height: 100px;
+  position: relative;
+  width: 100%;
+  z-index: 1000;
 }
 
-.header.shrink {
-  transform: scale(0.25);
-  right: 20px;
-  left: auto;
-} */
-
-/* .header {
-  position: relative; 
-
-}
-
-.react-svg {
-  transition: transform 0.3s ease, right 0.3s ease;
-  position: absolute;
+/* When Scrolled: Shrink and Fix the Header */
+.header.shrink-header.fixed-header {
+  position: fixed;
   top: 0;
-  left: 0;
+  height: 60px;
 }
 
-.header .shrink-logo {
-  transform: scale(0.25); 
-  left: auto;
-} */
+/* Logo Styling */
+.logo svg {
+  width: 350px;
+  height: auto;
+}
 
-.header .logo {
+.logo {
   transition: transform 0.3s ease;
+  display: inline-block;
+  max-height: 100%; /* so logo doesn't break out */
 }
 
-.header .logo.shrink-logo {
-  transform: scale(0.25) translateX(calc(100vw - 100%)) translateY(-20px);
+/* Logo Transformation on Scroll */
+.logo.shrink-logo {
+  transform: translateX(40vw) translateY(-10px) scale(0.25);
 }

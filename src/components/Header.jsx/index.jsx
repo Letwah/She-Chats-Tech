@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { ReactSVG } from "react-svg";
-import logo from "../../assets/images/logo.svg";
+import { Link } from "react-router-dom";
+
+import logo from "../../assets/images/logoLARGE-crop.svg";
 import "./styles.css";
 
 const Header = () => {
@@ -19,10 +21,12 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="header">
-      <div className={shrinkLogo ? "logo shrink-logo" : "logo"}>
-        <ReactSVG src={logo} />
-      </div>
+    <div className={`header ${shrinkLogo ? "shrink-header fixed-header" : ""}`}>
+      <Link to="/">
+        <div className={`logo ${shrinkLogo ? "shrink-logo" : ""}`}>
+          <ReactSVG src={logo} />
+        </div>
+      </Link>
       {/* Other header content */}
     </div>
   );
