@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       {/* <Header /> */}
-      <div className="contentGrid">
+      <div className="contentWrapper">
         <About />
       </div>
     </>

@@ -1,17 +1,21 @@
 /* Initial State of the Header */
 .header {
   transition: height 0.3s ease, position 0.3s ease;
-  height: 100px;
+  height: 80px;
   position: relative;
   width: 100%;
-  z-index: 1000;
+  z-index: 9;
 }
 
 /* When Scrolled: Shrink and Fix the Header */
 .header.shrink-header.fixed-header {
   position: fixed;
   top: 0;
-  height: 60px;
+  left: 0;
+  height: 80px;
+  width: 100vw;
+  z-index: 1;
+  border-bottom: 2px solid var(--text-color);
 }
 
 /* Logo Styling */
@@ -28,5 +32,15 @@
 
 /* Logo Transformation on Scroll */
 .logo.shrink-logo {
-  transform: translateX(40vw) translateY(-10px) scale(0.25);
+  transform: translateX(42vw) translateY(-10px) scale(0.25);
+}
+
+.header.fixed-header {
+  background-color: var(--button-bg-hov);
+}
+
+@media screen and (min-width: 800px) {
+  .logo.shrink-logo {
+    transform: translateX(44vw) translateY(-10px) scale(0.25);
+  }
 }

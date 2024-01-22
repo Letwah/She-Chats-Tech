@@ -22,8 +22,8 @@ button {
   left: 0;
   display: grid;
   place-items: center;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-image: url("../../assets/images/zap_menu.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -40,7 +40,7 @@ button {
   left: 44px;
   aspect-ratio: 1 / 1;
   translate: -50% -50%;
-  height: 88px;
+  height: 80px;
   background: #c6c2ff;
   border-radius: 0%;
   opacity: 0;
@@ -59,6 +59,7 @@ button {
   left: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -66,12 +67,18 @@ button {
   transition: 0.05s;
 }
 
-.menu nav {
+/* .menu nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding-left: 100px;
+} */
+
+.navWrapper nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu.open {
@@ -125,12 +132,17 @@ body .menu nav > a:hover {
 .page.open {
   filter: blur(10px);
 }
-.menu span a {
+/* .menu span a {
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  display: inline-block;
+} */
+
+.navWrapper a span {
   transition: transform 0.3s ease;
   transform-origin: center;
   display: inline-block;
 }
-
 /* 
 .page h2 {åß
   font-weight: 400;

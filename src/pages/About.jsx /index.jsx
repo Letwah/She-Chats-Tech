@@ -1,5 +1,5 @@
 import PixelatedImage from "../../components/PixelatedImage.jsx";
-import highResPortrait from "../../assets/images/Em-Bayley-Melendez_color.jpg";
+import highResPortrait from "../../assets/images/Em-crop-big.jpg";
 
 import "./styles.css";
 const About = () => {
@@ -20,44 +20,62 @@ const About = () => {
         </div>
 
         <div className="imageContainer">
-          <img
-            key="high-res"
-            src={highResPortrait}
-            alt="High Res"
-            loading="lazy"
-            className="originalImage"
-          />
+          <div>
+            <img
+              key="high-res"
+              src={highResPortrait}
+              alt="High Res"
+              loading="lazy"
+              className="originalImage"
+            />
+          </div>
 
-          <PixelatedImage
-            src={highResPortrait}
-            pixelSizeN={50}
-            pixelSizeM={50}
-          />
+          <div>
+            <PixelatedImage
+              src={highResPortrait}
+              pixelSizeN={50}
+              pixelSizeM={50}
+            />
+          </div>
         </div>
       </div>
-      <div className="intro">
-        <h1>
-          <strong>She Chats Tech</strong> was created as a Community for women
-          aspiring to be and women in tech from non-tech backgrounds.
-        </h1>
-      </div>
-      <div className="intro">
-        <h1>
-          <strong>She Chats Tech</strong> was created as a Community for women
-          aspiring to be and women in tech from non-tech backgrounds.
-        </h1>
-      </div>
-      <div className="intro">
-        <h1>
-          <strong>She Chats Tech</strong> was created as a Community for women
-          aspiring to be and women in tech from non-tech backgrounds.
-        </h1>
-      </div>
-      <div className="intro">
-        <h1>
-          <strong>She Chats Tech</strong> was created as a Community for women
-          aspiring to be and women in tech from non-tech backgrounds.
-        </h1>
+      <div className="grid3">
+        <div className="intro">
+          <h3>
+            <strong>She Chats Tech</strong> was created as a Community for women
+            aspiring to be and women in tech from non-tech backgrounds.
+          </h3>
+        </div>
+        <div className="intro">
+          <h3>
+            <strong>She Chats Tech</strong> was created as a Community for women
+            aspiring to be and women in tech from non-tech backgrounds.
+          </h3>
+        </div>
+        <div className="intro">
+          <h3>
+            <strong>She Chats Tech</strong> was created as a Community for women
+            aspiring to be and women in tech from non-tech backgrounds.
+          </h3>
+        </div>
+        <div className="intro">
+          <h3>
+            <strong>She Chats Tech</strong> was created as a Community for women
+            aspiring to be and women in tech from non-tech backgrounds.
+          </h3>
+        </div>
+        <div className="intro">
+          <h3>
+            <strong>She Chats Tech</strong> was created as a Community for women
+            aspiring to be and women in tech from non-tech backgrounds.
+          </h3>
+        </div>
+        <div className="intro">
+          <h3>
+            <strong>She Chats Tech</strong> was created as a Community for women
+            aspiring to be and women in tech from non-tech backgrounds.
+          </h3>
+        </div>
       </div>
     </>
   );

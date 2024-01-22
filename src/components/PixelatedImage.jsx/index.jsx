@@ -41,12 +41,14 @@ const PixelatedImage = ({
   }, [src, pixelSizeN, pixelSizeM]);
 
   return (
-    <canvas
-      ref={canvasRef}
-      className="canvasPixelated"
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    />
+    <div className="canvasContainer">
+      <canvas
+        ref={canvasRef}
+        className="canvasPixelated"
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      />
+    </div>
   );
 };
 

@@ -13,17 +13,22 @@ h1 strong {
 }
 
 .aboutWrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  width: 100%;
 
+  /* grid-template-columns: 1fr; */
+  align-items: center;
   justify-items: center;
+  justify-content: space-between;
+
+  flex-direction: column;
 }
 
 .aboutBio {
-  font-size: 2rem;
-  height: 450px;
+  font-size: 1.6rem;
+  /* max-width: 40vw; */
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 /* pixelated image */
@@ -34,27 +39,30 @@ h1 strong {
 }
 
 .imageContainer {
-  width: 450px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 350px;
   position: relative;
-
-  border-radius: 2rem;
+  display: flex;
+  height: 250px;
+  align-items: left;
   /* -webkit-mask-image: url(../../assets/masks/Subtract3.png);
   mask-image: url(../../assets/masks/Subtract3.png);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat; */
 }
 
+.canvasContainer {
+  width: 350px;
+  height: 250px;
+}
+
 .originalImage,
 .canvasPixelated {
   position: absolute;
-  /* top: 0; */
+  top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+
+  /* height: auto; */
   border-radius: 2rem;
   border: 2px solid var(--text-color);
 }
@@ -66,4 +74,66 @@ h1 strong {
 
 .imageContainer:hover .canvasPixelated {
   opacity: 0;
+}
+
+/* after Hero/Intro section  */
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.grid3 div {
+  padding: 1.2rem;
+  border: 2px solid;
+  border-radius: 1rem;
+}
+
+/* .grid3 div {
+  border-left: 2px solid var(--text-color);
+  border-top: 2px solid var(--text-color);
+  padding: 1rem;
+}
+
+.grid3 div:nth-child(3n) {
+  border-right: 2px solid var(--text-color);
+}
+
+.grid3 > *:nth-last-child(-n + 3) {
+  border-bottom: 2px solid var(--text-color);
+} */
+
+/* DESKTOP */
+@media screen and (min-width: 889px) {
+  .aboutWrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: end;
+    column-gap: 2rem;
+    /* margin-bottom: 4rem; */
+  }
+  .aboutBio {
+    font-size: 2rem;
+    height: 350px;
+    display: flex;
+    align-items: center;
+  }
+
+  .imageContainer {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    border-radius: 2rem;
+  }
+  .canvasContainer {
+    width: 350px;
+    height: 350px;
+  }
 }
