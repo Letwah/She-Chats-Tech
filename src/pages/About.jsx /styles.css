@@ -49,7 +49,60 @@ h1 strong {
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat; */
 }
+/* 
+ */
 
+@keyframes waveAnimation {
+  0%,
+  100% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.imageContainer::before {
+  content: "";
+  position: absolute;
+  top: -8rem;
+  right: -4rem;
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.imageContainer:hover::before {
+  background-image: url("../../assets/images/hand-no-wave.svg");
+  background-size: cover;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  opacity: 1;
+  animation: waveAnimation 2s linear infinite;
+  transform-origin: bottom;
+  z-index: 99;
+}
+
+.imageContainer::after {
+  content: "";
+  position: absolute;
+  bottom: -3rem;
+  left: -6rem;
+  width: 200px;
+  height: 200px;
+  background-image: url("../../assets/images/purple-star-big-points.svg");
+  background-size: cover;
+  animation: spin 10s linear infinite;
+}
 .canvasContainer {
   width: 350px;
   height: 250px;
@@ -75,7 +128,6 @@ h1 strong {
 .imageContainer:hover .canvasPixelated {
   opacity: 0;
 }
-
 /* after Hero/Intro section  */
 
 .grid3 {
@@ -90,7 +142,10 @@ h1 strong {
   border-radius: 1rem;
 }
 
-/* .grid3 div {
+/* FOR GRID LINES ON GRID WITHOUT GAP >>>
+
+
+.grid3 div {
   border-left: 2px solid var(--text-color);
   border-top: 2px solid var(--text-color);
   padding: 1rem;
