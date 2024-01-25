@@ -8,7 +8,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx ";
 import Contact from "./pages/Contact.jsx";
 import Menu from "./components/Menu.jsx";
-
+import Footer from "./components/Footer.jsx";
 // import Cursor from "./components/Cursor.jsx";
 
 const App = () => {
@@ -34,6 +34,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         {/* <Cursor /> */}
+        <Footer />
       </div>
     </>
   );

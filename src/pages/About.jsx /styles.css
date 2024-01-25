@@ -73,8 +73,8 @@ h1 strong {
 .imageContainer::before {
   content: "";
   position: absolute;
-  top: -8rem;
-  right: -4rem;
+  top: -5em;
+  right: -6rem;
   width: 150px;
   height: 150px;
   opacity: 0;
