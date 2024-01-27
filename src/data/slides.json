@@ -1,0 +1,56 @@
+[
+  {
+    "id": "slide1",
+    "imageUrl": "./src/assets/carouselImages/image_1.png",
+    "title": "First Slide",
+    "description": "This is the first slide."
+  },
+  {
+    "id": "slide2",
+    "imageUrl": "./src/assets/carouselImages/image_2.png",
+    "title": "Second Slide",
+    "description": "This is the second slide."
+  },
+  {
+    "id": "slide3",
+    "imageUrl": "./src/assets/carouselImages/image_3.png",
+    "title": "Third Slide",
+    "description": "This is the third slide."
+  },
+  {
+    "id": "slide4",
+    "imageUrl": "./src/assets/carouselImages/image_4.png",
+    "title": "Fourth Slide",
+    "description": "This is the fourth slide."
+  },
+  {
+    "id": "slide5",
+    "imageUrl": "./src/assets/carouselImages/image_5.png",
+    "title": "Fifth Slide",
+    "description": "This is the fifth slide."
+  },
+  {
+    "id": "slide6",
+    "imageUrl": "./src/assets/carouselImages/image_6.png",
+    "title": "Sixth Slide",
+    "description": "This is the sixth slide."
+  },
+  {
+    "id": "slide7",
+    "imageUrl": "./src/assets/carouselImages/image_7.png",
+    "title": "Seventh Slide",
+    "description": "This is the seventh slide."
+  },
+  {
+    "id": "slide8",
+    "imageUrl": "./src/assets/carouselImages/image_8.png",
+    "title": "Eighth Slide",
+    "description": "This is the eighth slide."
+  },
+  {
+    "id": "slide9",
+    "imageUrl": "./src/assets/carouselImages/image_9.png",
+    "title": "Ninth Slide",
+    "description": "This is the ninth slide."
+  }
+]

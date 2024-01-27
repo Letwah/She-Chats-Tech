@@ -1,0 +1,32 @@
+.swiperContainer {
+  margin: 0 5%;
+  overflow-y: visible !important;
+  padding-top: 5%;
+}
+
+.swiperItem {
+  height: 28rem;
+  min-width: 20rem;
+  padding: 2rem;
+  background-color: white;
+  margin: 4rem 1rem;
+  border-radius: 20px;
+}
+
+.swiperItem img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.innerSwiper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+
+.swiper {
+  cursor: grab;
+  overflow-x: hidden;
+}

@@ -2,6 +2,8 @@ import PixelatedImage from "../../components/PixelatedImage.jsx";
 import highResPortrait from "../../assets/images/Em-crop-big.jpg";
 
 import "./styles.css";
+import Swiper from "../../components/Swiper.jsx/index.jsx";
+
 const About = () => {
   return (
     <>
@@ -39,6 +41,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Swiper />
       <div className="grid3">
         <div className="intro">
           <h3>
