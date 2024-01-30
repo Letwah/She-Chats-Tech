@@ -20,8 +20,25 @@ const Swiper = () => {
     setWidth(swiper.current.scrollWidth - swiper.current.offsetWidth);
   }, []);
 
+  const generatePseudoElementCSS = (index, imageUrl) => {
+    return `
+      .swiperCard[data-index="${index}"]::after {
+        content: "";
+        background-image: url(${imageUrl});
+        /* Other styles remain the same */
+      }
+    `;
+  };
+
+  const pseudoElementsCSS = slidesData
+    .map((slide, index) =>
+      generatePseudoElementCSS(index, slide.pseudoImageUrl)
+    )
+    .join(" ");
+
   return (
     <div className="swiperContainer">
+      <style>{pseudoElementsCSS}</style>
       <motion.div
         ref={swiper}
         className="swiper"
@@ -44,8 +61,9 @@ const Swiper = () => {
                   : "normal"
               }
               variants={variants}
-              className="swiperItem"
+              className="swiperCard"
               key={slide.id}
+              data-index={index}
             >
               <img src={slide.imageUrl} alt={slide.title} />
               <div className="details">

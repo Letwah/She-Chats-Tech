@@ -61,24 +61,6 @@ const About = () => {
             aspiring to be and women in tech from non-tech backgrounds.
           </h3>
         </div>
-        <div className="intro">
-          <h3>
-            <strong>She Chats Tech</strong> was created as a Community for women
-            aspiring to be and women in tech from non-tech backgrounds.
-          </h3>
-        </div>
-        <div className="intro">
-          <h3>
-            <strong>She Chats Tech</strong> was created as a Community for women
-            aspiring to be and women in tech from non-tech backgrounds.
-          </h3>
-        </div>
-        <div className="intro">
-          <h3>
-            <strong>She Chats Tech</strong> was created as a Community for women
-            aspiring to be and women in tech from non-tech backgrounds.
-          </h3>
-        </div>
       </div>
     </>
   );

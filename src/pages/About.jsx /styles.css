@@ -22,6 +22,8 @@ h1 strong {
   justify-content: space-between;
 
   flex-direction: column;
+  /* bring carousel up without messing overflow */
+  margin-bottom: -5rem;
 }
 
 .aboutBio {
@@ -70,6 +72,30 @@ h1 strong {
     transform: rotate(360deg);
   }
 }
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px rgba(151, 71, 255, 0.5),
+      0 0 10px rgba(151, 71, 255, 0.5), 0 0 15px rgba(151, 71, 255, 0.5);
+    opacity: 0.6;
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(151, 71, 255, 1), 0 0 30px rgba(151, 71, 255, 1),
+      0 0 40px rgba(151, 71, 255, 1), 0 0 50px rgba(151, 71, 255, 1),
+      0 0 60px rgba(151, 71, 255, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .imageContainer::before {
   content: "";
   position: absolute;
@@ -81,7 +107,7 @@ h1 strong {
   transition: opacity 0.3s ease;
 }
 
-.imageContainer:hover::before {
+/* .imageContainer:hover::before {
   background-image: url("../../assets/images/hand-no-wave.svg");
   background-size: cover;
   pointer-events: none;
@@ -90,18 +116,18 @@ h1 strong {
   animation: waveAnimation 2s linear infinite;
   transform-origin: bottom;
   z-index: 99;
-}
+} */
 
 .imageContainer::after {
   content: "";
   position: absolute;
-  bottom: -3rem;
-  left: -6rem;
-  width: 200px;
-  height: 200px;
-  background-image: url("../../assets/images/purple-star-big-points.svg");
+  bottom: -1rem;
+  left: -2rem;
+  width: 5rem;
+  height: 5rem;
+  background-image: url("../../assets/icons/EmptyStar.svg");
   background-size: cover;
-  animation: spin 10s linear infinite;
+  animation: spin 8s infinite alternate;
 }
 .canvasContainer {
   width: 350px;

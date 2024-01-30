@@ -1,22 +1,48 @@
 .swiperContainer {
-  margin: 0 5%;
+  margin: 0 -10%;
   overflow-y: visible !important;
   padding-top: 5%;
 }
 
-.swiperItem {
+.swiperCard {
   height: 28rem;
   min-width: 20rem;
-  padding: 2rem;
+  padding: 1rem;
   background-color: white;
-  margin: 4rem 1rem;
-  border-radius: 20px;
+  margin: 4rem 1.2rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
-.swiperItem img {
+.swiperCard::after {
+  content: "";
+  background-image: url(../../assets/images/eye.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* color: red; */
+  top: -10%;
+  right: -15%;
+  width: 5rem;
+  height: 5rem;
+  transform: rotate(15deg);
+  opacity: 1;
+
+  pointer-events: none;
+  z-index: 999;
+  position: absolute;
+}
+
+.swiperCard:hover::after {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.swiperCard img {
   width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 3px;
   pointer-events: none;
 }
 

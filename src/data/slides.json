@@ -1,56 +1,51 @@
 [
   {
-    "id": "slide1",
+    "id": "Events",
     "imageUrl": "./src/assets/carouselImages/image_1.png",
-    "title": "First Slide",
+    "pseudoImageUrl": "./src/assets/icons/Calendar.svg",
+    "title": "Talks + Events",
     "description": "This is the first slide."
   },
   {
-    "id": "slide2",
+    "id": "Feed",
     "imageUrl": "./src/assets/carouselImages/image_2.png",
-    "title": "Second Slide",
+    "pseudoImageUrl": "./src/assets/icons/Wifi.svg",
+    "title": "News Feed",
     "description": "This is the second slide."
   },
   {
-    "id": "slide3",
+    "id": "Inspo",
     "imageUrl": "./src/assets/carouselImages/image_3.png",
-    "title": "Third Slide",
+    "pseudoImageUrl": "./src/assets/icons/LightBulb-bw.svg",
+    "title": "Inspiration",
     "description": "This is the third slide."
   },
   {
-    "id": "slide4",
+    "id": "Tips",
     "imageUrl": "./src/assets/carouselImages/image_4.png",
-    "title": "Fourth Slide",
+    "pseudoImageUrl": "./src/assets/icons/Info.svg",
+    "title": "Tips",
     "description": "This is the fourth slide."
   },
   {
-    "id": "slide5",
+    "id": "Save",
     "imageUrl": "./src/assets/carouselImages/image_5.png",
-    "title": "Fifth Slide",
+    "pseudoImageUrl": "./src/assets/icons/File.svg",
+    "title": "Save for Later",
     "description": "This is the fifth slide."
   },
   {
-    "id": "slide6",
+    "id": "Tech",
     "imageUrl": "./src/assets/carouselImages/image_6.png",
-    "title": "Sixth Slide",
+    "pseudoImageUrl": "./src/assets/icons/Computer.svg",
+    "title": "Tech Help",
     "description": "This is the sixth slide."
   },
   {
-    "id": "slide7",
+    "id": "People",
     "imageUrl": "./src/assets/carouselImages/image_7.png",
-    "title": "Seventh Slide",
+    "pseudoImageUrl": "./src/assets/icons/Flame.svg",
+    "title": "Members",
     "description": "This is the seventh slide."
-  },
-  {
-    "id": "slide8",
-    "imageUrl": "./src/assets/carouselImages/image_8.png",
-    "title": "Eighth Slide",
-    "description": "This is the eighth slide."
-  },
-  {
-    "id": "slide9",
-    "imageUrl": "./src/assets/carouselImages/image_9.png",
-    "title": "Ninth Slide",
-    "description": "This is the ninth slide."
   }
 ]
