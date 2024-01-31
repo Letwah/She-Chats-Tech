@@ -4,6 +4,7 @@
 
 .intro h1 {
   font-size: 2.8rem;
+  margin-top: 1rem;
 }
 
 h1 strong {
@@ -204,8 +205,8 @@ h1 strong {
   }
 
   .imageContainer {
-    width: 350px;
-    height: 250px;
+    width: 450px;
+    /* height: 250px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,7 +215,35 @@ h1 strong {
     border-radius: 2rem;
   }
   .canvasContainer {
-    width: 350px;
+    width: 450px;
     height: 350px;
   }
+}
+
+button.cta {
+  margin: 4rem 0;
+  width: fit-content;
+  background-color: var(--button-bg);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid var(--button-text);
+  transform: translate(10px, 10px);
+  box-shadow: 0px 0px black;
+}
+
+/* //stop it growing on hover as other buttons  */
+button.cta:hover {
+  width: fit-content;
+  height: auto;
+  border: 1px solid var(--link-color);
+  background-color: var(--button-bg-hov);
+  transform: translate(2px, 2px);
+  box-shadow: 8px 8px black;
+}
+
+button.cta a {
+  font-weight: 900;
+  font-family: "Pixelify Sans";
+  font-size: 1.5rem;
+  color: var(--text-color);
 }

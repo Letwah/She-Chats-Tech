@@ -1,6 +1,7 @@
 .footerWrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-top: 2px solid black;
   width: 100vw;
   height: fit-content;
@@ -8,6 +9,42 @@
   bottom: 0;
   left: 0;
   background-color: var(--button-bg-hov);
-  opacity: 0.7;
-  z-index: -10;
+  opacity: 1;
+  z-index: 1;
+  padding: 0 2vw;
 }
+
+.footerLink {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.footerLink a {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.footerLink a > div > div > svg {
+  width: 2rem;
+  height: auto;
+}
+
+/* .footerLink.insta {
+  justify-content: flex-start;
+}
+
+.footerLink.copywrite {
+  justify-content: center;
+}
+
+.footerLink.linkedIn {
+  justify-content: flex-end;
+} */

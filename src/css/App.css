@@ -36,16 +36,17 @@
   width: 100vw;
   --background-bold-gradient: linear-gradient(
     238deg,
-    #c4ff46 3.45%,
+    #c7ff7e 3.45%,
     #c6c2ff 65%
   );
   --background-color: linear-gradient(238deg, #e5fdbb 2.45%, #c6c2ff 91.6%);
   --transparent-bg: #0000000d;
   --text-color: #161616;
   --menu-bg-color: #c6c2ff;
-  /* --link-dec: #161616;
-  --link-color: #ff0000; */
-  --button-bg-hov: #c4ff46;
+  /* --link-dec: #161616;*/
+  --button-bg: #f1f1f1;
+  --link-color: #786fe1;
+  --button-bg-hov: #c7ff7e;
   --button-text: #1a1a1a;
   --overlay-color: #b288ff7d;
 }
@@ -54,11 +55,12 @@
   :root {
     --background-color: #161616;
     --transparent-bg: #fffff80f;
-    --text-color: #fffff8;
-    /* --link-dec: #161616;
-    --link-color: #00ffff; */
-    --button-bg-hov: #00ffff76;
-    --button-text: #00ffff;
+    --text-color: #f1f1f1;
+    --menu-bg-color: #786fe1;
+    /* --link-dec: #161616;*/
+    --link-color: #c7ff7e;
+    --button-bg-hov: #786fe1;
+    --button-text: #f1f1f1;
     --overlay-color: #fffff8a5;
   }
 
@@ -130,6 +132,15 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
+
+/* h4 used in footer */
+
+h4 {
+  text-transform: uppercase;
+  font-family: "Pixelify Sans";
+  color: var(--text-color);
+}
+
 a {
   color: var(--link-color);
   text-decoration: none;

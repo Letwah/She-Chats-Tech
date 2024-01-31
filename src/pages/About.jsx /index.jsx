@@ -12,6 +12,9 @@ const About = () => {
           <strong>She Chats Tech</strong> was created as a Community for women
           aspiring to be and women in tech from non-tech backgrounds.
         </h1>
+        <button className="cta">
+          <a href="/contact">Sign Up</a>
+        </button>
       </div>
       <div className="aboutWrapper">
         <div className="aboutBio">
