@@ -5,7 +5,7 @@ const initialState = {
   page: HOME,
   burgerOpen: false,
   highResImageLoaded: false,
-  cursor: "",
+  cursor: "default",
   carouselItems: [],
 };
 

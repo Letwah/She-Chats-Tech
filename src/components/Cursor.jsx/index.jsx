@@ -1,31 +1,35 @@
-import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
-import { selectCursor } from "../../redux/appSlice";
+// import { useSelector } from "react-redux";
+// import { selectCursor } from "../../redux/appSlice";
+// import customCursorDefault from "../../assets/cursors/cursor.svg";
+// import customCursorLink from "../../assets/cursors/cursorLink.svg";
+// import customCursorHi from "../../assets/cursors/cursorHi.svg";
 
-import "../../css/App.css";
+// import "./styles.css";
 
-const Cursor = () => {
-  const cursorType = useSelector(selectCursor);
-  const [position, setPosition] = React.useState({ x: 0, y: 0 });
+// const Cursor = () => {
+//   const cursorType = useSelector(selectCursor);
+//   console.log("Rendering Cursor component, cursorType:", cursorType);
 
-  useEffect(() => {
-    const updatePosition = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
-    };
+//   let cursorImage;
+//   switch (cursorType) {
+//     case "default":
+//       cursorImage = customCursorDefault;
+//       break;
+//     case "link":
+//       cursorImage = customCursorLink;
+//       break;
+//     case "photo":
+//       cursorImage = customCursorHi;
+//       break;
+//     default:
+//       cursorImage = customCursorDefault;
+//   }
 
-    window.addEventListener("mousemove", updatePosition);
+//   const cursorStyle = {
+//     cursor: `url(${cursorImage}), auto`,
+//   };
 
-    return () => {
-      window.removeEventListener("mousemove", updatePosition);
-    };
-  }, [cursorType]);
+//   return <div style={cursorStyle} className="cursorContainer" />;
+// };
 
-  return (
-    <div
-      className={`customCursor cursor ${cursorType}`}
-      style={{ left: `${position.x}px`, top: `${position.y}px` }}
-    />
-  );
-};
-
-export default Cursor;
+// export default Cursor;

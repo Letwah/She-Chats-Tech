@@ -3,7 +3,7 @@
 } */
 
 .intro h1 {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   margin-top: 1rem;
 }
 
@@ -11,6 +11,7 @@ h1 strong {
   font-family: "DM Serif Display", serif;
   font-style: italic;
   font-weight: 900;
+  font-size: 2.8rem;
 }
 
 .aboutWrapper {
@@ -161,6 +162,7 @@ h1 strong {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
+  margin-bottom: 5rem;
 }
 
 .grid3 div {
@@ -221,7 +223,7 @@ h1 strong {
 }
 
 button.cta {
-  margin: 4rem 0;
+  margin: 4rem 0 2rem 0;
   width: fit-content;
   background-color: var(--button-bg);
   padding: 1rem 2rem;

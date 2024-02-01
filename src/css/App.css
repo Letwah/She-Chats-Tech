@@ -73,6 +73,19 @@
   }
 }
 
+body {
+  cursor: url("../assets/cursors/cursor.svg"), auto;
+}
+
+/* Change the cursor for all links on hover */
+a:hover {
+  cursor: url("../assets/cursors/cursorLink.svg"), pointer;
+}
+
+div.swiper {
+  cursor: url("../assets/cursors/cursorHi.svg"), grab !important;
+}
+
 html {
   font-size: calc(16px + 0.1vmin);
 }
