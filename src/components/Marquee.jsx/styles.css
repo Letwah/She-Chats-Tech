@@ -13,7 +13,7 @@
   height: 4rem;
   border-top: 2px solid;
   border-bottom: 2px solid;
-  margin: 0 -4vw 4vh -4vw;
+  margin: 0 -30vw 4vh -30vw;
   background-color: var(--menu-bg-color);
   color: var(--button-bg-hov);
 }

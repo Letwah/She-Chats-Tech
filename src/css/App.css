@@ -31,11 +31,6 @@
   box-sizing: border-box;
 }
 
-body {
-  max-width: 1440px;
-  margin: 2vw auto;
-}
-
 :root {
   height: 100vh;
   width: 100vw;
@@ -109,25 +104,17 @@ body {
   height: fit-content;
   overflow-x: hidden;
   overflow-y: scroll;
-  margin: 4vh 4vw;
+  margin: 6vw auto;
   padding: 0;
   text-rendering: optimizeLegibility;
-  max-width: 92vw;
+  max-width: 1220px;
   min-width: 450px;
   -webkit-font-smoothing: antialiased;
 }
 
-/* body {
-  margin: 0 auto;
-  display: flex;
-}
-
 .App {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
+  margin: 0 2rem;
+}
 
 p {
   line-height: 2.2rem;
@@ -197,17 +184,19 @@ button:hover {
 
 /* LAYOUT */
 
-.contentWrapper > .intro {
+/* .contentWrapper, */
+
+.intro {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 6rem;
   align-items: center !important;
   row-gap: 2rem;
   text-align: center;
 }
 
 @media screen and (min-width: 889px) {
-  .contentWrapper > .intro {
+  .intro {
     display: flex;
     flex-direction: column;
     align-items: flex-start !important;

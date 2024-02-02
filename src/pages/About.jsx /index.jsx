@@ -4,6 +4,7 @@ import highResPortrait from "../../assets/images/Em-crop-big.jpg";
 import "./styles.css";
 import Swiper from "../../components/Swiper.jsx/index.jsx";
 import Marquee from "../../components/Marquee.jsx/index.jsx";
+import Quotes from "../../components/Quotes.jsx/index.jsx";
 
 const About = () => {
   return (
@@ -48,26 +49,7 @@ const About = () => {
       </div>
       <Swiper />
       <Marquee />
-      <div className="grid3">
-        <div className="intro">
-          <h3>
-            <strong>She Chats Tech</strong> was created as a Community for women
-            aspiring to be and women in tech from non-tech backgrounds.
-          </h3>
-        </div>
-        <div className="intro">
-          <h3>
-            <strong>She Chats Tech</strong> was created as a Community for women
-            aspiring to be and women in tech from non-tech backgrounds.
-          </h3>
-        </div>
-        <div className="intro">
-          <h3>
-            <strong>She Chats Tech</strong> was created as a Community for women
-            aspiring to be and women in tech from non-tech backgrounds.
-          </h3>
-        </div>
-      </div>
+      <Quotes />
     </>
   );
 };

@@ -1,11 +1,12 @@
 .swiperContainer {
-  margin: 0 -10%;
+  width: 150vw;
+  margin: 0 -5%;
   overflow-y: visible !important;
   padding-top: 5%;
 }
 
 .swiperCard {
-  height: 15rem;
+  height: 17rem;
   min-width: 12rem;
   padding: 0.8rem;
   background-color: white;
@@ -53,7 +54,7 @@
 }
 
 .details p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin: 0.2rem 0;
   line-height: 1rem;
 }
@@ -71,6 +72,10 @@
 }
 
 @media (min-width: 768px) {
+  .swiperContainer {
+    width: 150%;
+    margin: 0 -15%;
+  }
   .swiperCard {
     height: 26rem;
     min-width: 20rem;

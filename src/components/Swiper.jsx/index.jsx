@@ -9,7 +9,7 @@ const Swiper = () => {
   const [hovered, setHovered] = useState(null);
   const swiper = useRef();
 
-  // Variants for Framer Motion to animate scale and blur
+  // Framer Motion
   const variants = {
     hovered: { scale: 1.2 },
     blurred: { filter: "blur(4px)" },

@@ -1,0 +1,34 @@
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 6rem 0rem;
+}
+
+.grid3 div {
+  padding: 1.2rem;
+  border: 2px solid;
+  border-radius: 1rem;
+  background-color: var(--overlay-color);
+}
+div.testimonialsTitle {
+  grid-column: span 2;
+  background: var(--background-bold-gradient);
+}
+
+.testimonials {
+  display: flex;
+  align-items: flex-start;
+}
+
+.testimonials h3 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 889px) {
+  .testimonials h3 {
+    font-size: 1.4rem;
+  }
+}

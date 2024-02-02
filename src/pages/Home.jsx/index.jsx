@@ -12,9 +12,8 @@ const Home = () => {
   return (
     <>
       {/* <Header /> */}
-      <div className="contentWrapper">
-        <About />
-      </div>
+
+      <About />
     </>
   );
 };
