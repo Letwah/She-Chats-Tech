@@ -9,7 +9,7 @@
 
 h1 strong {
   font-family: "DM Serif Display", serif;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: 900;
   font-size: 2.8rem;
 }
@@ -17,22 +17,30 @@ h1 strong {
 .aboutWrapper {
   display: flex;
   width: 100%;
+  flex-direction: column;
 
-  /* grid-template-columns: 1fr; */
   align-items: center;
   justify-items: center;
   justify-content: space-between;
-
-  flex-direction: column;
   /* bring carousel up without messing overflow */
-  margin-bottom: -5rem;
+  margin-bottom: -3rem;
 }
 
 .aboutBio {
-  font-size: 1.6rem;
   /* max-width: 40vw; */
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.aboutBio p {
+  font-size: 1.8rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.aboutBio strong {
+  font-family: "DM Serif Display";
 }
 
 /* pixelated image */
@@ -48,13 +56,7 @@ h1 strong {
   display: flex;
   height: 250px;
   align-items: left;
-  /* -webkit-mask-image: url(../../assets/masks/Subtract3.png);
-  mask-image: url(../../assets/masks/Subtract3.png);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat; */
 }
-/* 
- */
 
 @keyframes waveAnimation {
   0%,
@@ -188,42 +190,8 @@ h1 strong {
   border-bottom: 2px solid var(--text-color);
 } */
 
-/* DESKTOP */
-@media screen and (min-width: 889px) {
-  .aboutWrapper {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: end;
-    column-gap: 2rem;
-    /* margin-bottom: 4rem; */
-  }
-  .aboutBio {
-    font-size: 2rem;
-    height: 350px;
-    display: flex;
-    align-items: center;
-  }
-
-  .imageContainer {
-    width: 450px;
-    /* height: 250px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-    border-radius: 2rem;
-  }
-  .canvasContainer {
-    width: 450px;
-    height: 350px;
-  }
-}
-
 button.cta {
-  margin: 4rem 0 2rem 0;
+  margin: 0rem 0 2rem 0;
   width: fit-content;
   background-color: var(--button-bg);
   padding: 1rem 2rem;
@@ -248,4 +216,45 @@ button.cta a {
   font-family: "Pixelify Sans";
   font-size: 1.5rem;
   color: var(--text-color);
+}
+
+/* DESKTOP */
+@media screen and (min-width: 889px) {
+  .aboutWrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    /* margin-bottom: 4rem; */
+  }
+  .aboutBio {
+    font-size: 2rem;
+    /* height: 350px; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .imageContainer {
+    width: 450px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    border-radius: 2rem;
+  }
+  .canvasContainer {
+    width: 450px;
+    height: 350px;
+  }
+
+  button.cta {
+    margin: 2rem 0 2rem 0;
+  }
 }

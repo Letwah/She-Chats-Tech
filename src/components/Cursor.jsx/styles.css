@@ -21,7 +21,7 @@ body * {
 .cursor::after {
   content: "";
   position: absolute;
-  background-color: black;
+  background-color: var(--cursor-color);
   transition: background-color 0.3s ease;
 }
 
@@ -41,7 +41,7 @@ body * {
 
 .cursorHover::before,
 .cursorHover::after {
-  background-color: orange;
+  background-color: var(--cursor-link-color);
 }
 
 /* .swiper section styles */
@@ -52,18 +52,19 @@ body * {
 }
 
 .cursorDrag {
-  border: 2px solid black;
+  border: 2px solid var(--button-bg-hov);
   border-radius: 50%;
   width: 45px;
   height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--button-bg-hov);
+  background-color: var(--overlay-color);
 }
 
 .cursorDrag::before {
   content: "DRAG";
+  color: var(--button-bg-hov);
   width: 100%;
   height: 0px;
   position: absolute;

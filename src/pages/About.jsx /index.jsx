@@ -3,6 +3,7 @@ import highResPortrait from "../../assets/images/Em-crop-big.jpg";
 
 import "./styles.css";
 import Swiper from "../../components/Swiper.jsx/index.jsx";
+import Marquee from "../../components/Marquee.jsx/index.jsx";
 
 const About = () => {
   return (
@@ -18,10 +19,11 @@ const About = () => {
       </div>
       <div className="aboutWrapper">
         <div className="aboutBio">
+          <p>Meet tech career changer,</p>
           <p>
-            Meet Founder, creator and developer, Em Bayley-Melendez of{" "}
-            <strong>She Chats Tech.</strong>
+            creative &<strong> She Chats Tech Founder, </strong>
           </p>
+          <p>Em Bayley-Melendez. </p>
         </div>
 
         <div className="imageContainer">
@@ -45,6 +47,7 @@ const About = () => {
         </div>
       </div>
       <Swiper />
+      <Marquee />
       <div className="grid3">
         <div className="intro">
           <h3>

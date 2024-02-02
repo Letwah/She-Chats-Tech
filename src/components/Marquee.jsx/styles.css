@@ -1,0 +1,38 @@
+@keyframes marqueeAnimation {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  height: 4rem;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  margin: 0 -4vw 4vh -4vw;
+  background-color: var(--menu-bg-color);
+  color: var(--button-bg-hov);
+}
+
+.marquee p {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.marqueeImg img {
+  width: 4rem;
+  margin: 0 1rem;
+}
+
+.marqueeContent {
+  display: flex;
+  align-items: center;
+  animation: marqueeAnimation 20s linear infinite;
+}

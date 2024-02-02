@@ -1,51 +1,51 @@
 [
   {
     "id": "Events",
-    "imageUrl": "./src/assets/carouselImages/image_1.png",
+    "imageUrl": "./src/assets/carouselImages/events.gif",
     "pseudoImageUrl": "./src/assets/icons/Calendar.svg",
     "title": "Talks + Events",
-    "description": "This is the first slide."
+    "description": "Read about our in-person event with Founders and Coders."
   },
   {
     "id": "Feed",
-    "imageUrl": "./src/assets/carouselImages/image_2.png",
+    "imageUrl": "./src/assets/carouselImages/WOSR.gif",
     "pseudoImageUrl": "./src/assets/icons/Wifi.svg",
     "title": "News Feed",
-    "description": "This is the second slide."
-  },
-  {
-    "id": "Inspo",
-    "imageUrl": "./src/assets/carouselImages/image_3.png",
-    "pseudoImageUrl": "./src/assets/icons/LightBulb-bw.svg",
-    "title": "Inspiration",
-    "description": "This is the third slide."
+    "description": "Connect with us on Instagram."
   },
   {
     "id": "Tips",
-    "imageUrl": "./src/assets/carouselImages/image_4.png",
-    "pseudoImageUrl": "./src/assets/icons/Info.svg",
+    "imageUrl": "./src/assets/carouselImages/TipsforSuccess.gif",
+    "pseudoImageUrl": "./src/assets/icons/LightBulb-bw.svg",
     "title": "Tips",
-    "description": "This is the fourth slide."
+    "description": "Tips for Success."
+  },
+  {
+    "id": "Inspiration",
+    "imageUrl": "./src/assets/carouselImages/inspo.png",
+    "pseudoImageUrl": "./src/assets/icons/Info.svg",
+    "title": "Inspiration",
+    "description": "For when your mind goes blank"
   },
   {
     "id": "Save",
     "imageUrl": "./src/assets/carouselImages/image_5.png",
     "pseudoImageUrl": "./src/assets/icons/File.svg",
     "title": "Save for Later",
-    "description": "This is the fifth slide."
+    "description": "Keep this post"
   },
   {
     "id": "Tech",
-    "imageUrl": "./src/assets/carouselImages/image_6.png",
+    "imageUrl": "./src/assets/carouselImages/help.png",
     "pseudoImageUrl": "./src/assets/icons/Computer.svg",
-    "title": "Tech Help",
-    "description": "This is the sixth slide."
+    "title": "Help + Advice",
+    "description": "When you need some help."
   },
   {
-    "id": "People",
-    "imageUrl": "./src/assets/carouselImages/image_7.png",
+    "id": "Members",
+    "imageUrl": "./src/assets/carouselImages/profileFeature.gif",
     "pseudoImageUrl": "./src/assets/icons/Flame.svg",
-    "title": "Members",
-    "description": "This is the seventh slide."
+    "title": "Featured Members",
+    "description": "Read about some of our members."
   }
 ]

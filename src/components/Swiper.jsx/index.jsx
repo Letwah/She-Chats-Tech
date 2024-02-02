@@ -25,7 +25,7 @@ const Swiper = () => {
       .swiperCard[data-index="${index}"]::after {
         content: "";
         background-image: url(${imageUrl});
-        /* Other styles remain the same */
+        
       }
     `;
   };

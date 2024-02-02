@@ -54,8 +54,10 @@ body {
   --button-bg-hov: #c7ff7e;
   --button-text: #1a1a1a;
   --overlay-color: #b288ff7d;
-  --cursor-color: #786fe1;
-  --cursor-link-color: #c7ff7e;
+  --cursor-color: #1a1a1a;
+  --cursor-link-color: #ffa114;
+
+  /* --cursor-link-color: #ff5f1f; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -195,13 +197,22 @@ button:hover {
 
 /* LAYOUT */
 
-.contentWrapper {
+.contentWrapper > .intro {
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
-  /* grid-template-columns: 1fr; */
-  justify-items: center;
+  align-items: center !important;
   row-gap: 2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 889px) {
+  .contentWrapper > .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    text-align: left;
+  }
 }
 
 /* @media screen and (min-width: 889px) {
