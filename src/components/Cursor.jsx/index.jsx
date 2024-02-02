@@ -1,35 +1,44 @@
-// import { useSelector } from "react-redux";
-// import { selectCursor } from "../../redux/appSlice";
-// import customCursorDefault from "../../assets/cursors/cursor.svg";
-// import customCursorLink from "../../assets/cursors/cursorLink.svg";
-// import customCursorHi from "../../assets/cursors/cursorHi.svg";
+import { useState, useEffect } from "react";
+import "./styles.css"; // Make sure this path is correct
 
-// import "./styles.css";
+const Cursor = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [hoverClass, setHoverClass] = useState("");
 
-// const Cursor = () => {
-//   const cursorType = useSelector(selectCursor);
-//   console.log("Rendering Cursor component, cursorType:", cursorType);
+  useEffect(() => {
+    const updatePosition = (e) => {
+      setPosition({ x: e.clientX - 10, y: e.clientY - 10 });
+    };
 
-//   let cursorImage;
-//   switch (cursorType) {
-//     case "default":
-//       cursorImage = customCursorDefault;
-//       break;
-//     case "link":
-//       cursorImage = customCursorLink;
-//       break;
-//     case "photo":
-//       cursorImage = customCursorHi;
-//       break;
-//     default:
-//       cursorImage = customCursorDefault;
-//   }
+    const handleMouseInteraction = (e) => {
+      if (e.target.closest("a")) {
+        setHoverClass("cursorHover");
+      } else if (e.target.closest(".swiper")) {
+        setHoverClass("cursorDrag");
+      } else {
+        setHoverClass("");
+      }
+    };
 
-//   const cursorStyle = {
-//     cursor: `url(${cursorImage}), auto`,
-//   };
+    document.addEventListener("mousemove", updatePosition);
+    document.addEventListener("mouseover", handleMouseInteraction);
+    document.addEventListener("mouseout", handleMouseInteraction);
 
-//   return <div style={cursorStyle} className="cursorContainer" />;
-// };
+    return () => {
+      document.removeEventListener("mousemove", updatePosition);
+      document.removeEventListener("mouseover", handleMouseInteraction);
+      document.removeEventListener("mouseout", handleMouseInteraction);
+    };
+  }, []);
+  return (
+    <div
+      className={`cursor ${hoverClass}`}
+      style={{
+        left: `${position.x}px`,
+        top: `${position.y}px`,
+      }}
+    />
+  );
+};
 
-// export default Cursor;
+export default Cursor;

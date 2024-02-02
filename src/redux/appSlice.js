@@ -5,7 +5,6 @@ const initialState = {
   page: HOME,
   burgerOpen: false,
   highResImageLoaded: false,
-  cursor: "default",
   carouselItems: [],
 };
 
@@ -19,21 +18,23 @@ const appSlice = createSlice({
     setHighResImageLoaded: (state, action) => {
       state.highResImageLoaded = action.payload;
     },
-    setCursor: (state, action) => {
-      state.cursor = action.payload;
-    },
+
     setCarouselItems: (state, action) => {
       state.carouselItems = action.payload;
     },
   },
 });
 
-export const { setPage, setHighResImageLoaded, setCursor, setCarouselItems } =
-  appSlice.actions;
+export const {
+  setPage,
+  setHighResImageLoaded,
+
+  setCarouselItems,
+} = appSlice.actions;
 
 export const selectPage = (state) => state.app.page;
 export const selectHighResImageLoaded = (state) => state.app.highResImageLoaded;
-export const selectCursor = (state) => state.app.cursor;
+
 export const selectCarouselItems = (state) => state.app.carouselItems;
 
 export default appSlice.reducer;

@@ -50,7 +50,7 @@ button {
 .background.open {
   height: 300vh;
   width: 300vw;
-  opacity: 0.85;
+  opacity: 1;
 }
 
 .menu {

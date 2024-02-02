@@ -6,7 +6,7 @@ import "./styles.css";
 
 const Swiper = () => {
   const [width, setWidth] = useState(0);
-  const [hovered, setHovered] = useState(false);
+  const [hovered, setHovered] = useState(null);
   const swiper = useRef();
 
   // Variants for Framer Motion to animate scale and blur

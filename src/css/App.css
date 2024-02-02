@@ -31,6 +31,11 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: 1440px;
+  margin: 2vw auto;
+}
+
 :root {
   height: 100vh;
   width: 100vw;
@@ -49,6 +54,8 @@
   --button-bg-hov: #c7ff7e;
   --button-text: #1a1a1a;
   --overlay-color: #b288ff7d;
+  --cursor-color: #786fe1;
+  --cursor-link-color: #c7ff7e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -73,18 +80,17 @@
   }
 }
 
-body {
-  cursor: url("../assets/cursors/cursor.svg"), auto;
+/* body {
+  cursor: url("../assets/cursors/cursor.png") 0 0, auto;
 }
 
-/* Change the cursor for all links on hover */
 a:hover {
-  cursor: url("../assets/cursors/cursorLink.svg"), pointer;
+  cursor: url("../assets/cursors/cursorLink.png") 0 0, pointer;
 }
 
 div.swiper {
-  cursor: url("../assets/cursors/cursorHi.svg"), grab !important;
-}
+  cursor: url("../assets/cursors/cursorHi.png") 0 0, grab !important;
+} */
 
 html {
   font-size: calc(16px + 0.1vmin);
