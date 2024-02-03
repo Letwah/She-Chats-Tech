@@ -20,6 +20,13 @@
 }
 
 @font-face {
+  font-family: "Tan Ashford";
+  src: url("../assets/fonts/TAN-ASHFORD.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Pixelify Sans";
   src: url("../assets/fonts/PixelifySans-VariableFont_wght.woff2")
     format("woff2");
@@ -147,6 +154,9 @@ h4 {
   text-transform: uppercase;
   font-family: "Pixelify Sans";
   color: var(--text-color);
+}
+strong {
+  font-family: "Tan Ashford", serif;
 }
 
 a {

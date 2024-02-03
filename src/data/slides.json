@@ -16,7 +16,7 @@
   {
     "id": "Tips",
     "imageUrl": "./src/assets/carouselImages/TipsforSuccess.gif",
-    "pseudoImageUrl": "./src/assets/icons/LightBulb-bw.svg",
+    "pseudoImageUrl": "./src/assets/icons/lightening.svg",
     "title": "Tips",
     "description": "Tips for Success."
   },

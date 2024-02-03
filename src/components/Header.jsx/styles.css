@@ -26,7 +26,8 @@
 
 .logo {
   transition: transform 0.3s ease;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   max-height: 100%; /* so logo doesn't break out */
 }
 
@@ -42,5 +43,11 @@
 @media screen and (min-width: 800px) {
   .logo.shrink-logo {
     transform: translateX(44vw) translateY(-10px) scale(0.25);
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .logo.shrink-logo {
+    transform: translateX(46vw) translateY(-10px) scale(0.25);
   }
 }

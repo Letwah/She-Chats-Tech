@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { HOME } from "../store/types";
+import { LANDING } from "../store/types";
 
 const initialState = {
-  page: HOME,
+  page: LANDING,
   burgerOpen: false,
   highResImageLoaded: false,
   carouselItems: [],

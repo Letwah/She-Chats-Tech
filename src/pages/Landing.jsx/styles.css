@@ -1,0 +1,281 @@
+/* .imageContainer > img {
+  max-width: 400px;
+} */
+
+/* //animated blob image */
+
+/* .animatedBlob {
+  width: 380px;
+  height: 380px;
+  margin: 20px;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+  animation: liquidBlob 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes liquidBlob {
+  0%,
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+} */
+
+/* ____________________________________________________ */
+
+/* body {
+  margin: 0 auto;
+} */
+
+.intro h1 {
+  font-size: 2.2rem;
+}
+
+h1 strong {
+  /* font-style: italic; */
+  font-weight: 900;
+  font-size: 2.2rem;
+}
+
+.aboutWrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  /* bring carousel up without messing overflow */
+  margin-bottom: -3rem;
+}
+
+.aboutBio {
+  /* max-width: 40vw; */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.aboutBio p {
+  font-size: 1.8rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.aboutBio strong {
+  font-size: 1.4rem;
+}
+
+/* pixelated image */
+
+.pixelated {
+  mask: paint(fragmentation);
+  -webkit-mask: paint(fragmentation);
+}
+
+.imageContainer {
+  width: 350px;
+  position: relative;
+  display: flex;
+  height: 250px;
+  align-items: left;
+}
+
+@keyframes waveAnimation {
+  0%,
+  100% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px rgba(151, 71, 255, 0.5),
+      0 0 10px rgba(151, 71, 255, 0.5), 0 0 15px rgba(151, 71, 255, 0.5);
+    opacity: 0.6;
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(151, 71, 255, 1), 0 0 30px rgba(151, 71, 255, 1),
+      0 0 40px rgba(151, 71, 255, 1), 0 0 50px rgba(151, 71, 255, 1),
+      0 0 60px rgba(151, 71, 255, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.imageContainer::before {
+  content: "";
+  position: absolute;
+  top: -5em;
+  right: -6rem;
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* .imageContainer:hover::before {
+  background-image: url("../../assets/images/hand-no-wave.svg");
+  background-size: cover;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  opacity: 1;
+  animation: waveAnimation 2s linear infinite;
+  transform-origin: bottom;
+  z-index: 99;
+} */
+
+.imageContainer::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: -2rem;
+  width: 5rem;
+  height: 5rem;
+  background-image: url("../../assets/icons/EmptyStar.svg");
+  background-size: cover;
+  animation: spin 8s infinite alternate;
+}
+.canvasContainer {
+  width: 350px;
+  height: 250px;
+}
+
+.originalImage,
+.canvasPixelated {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  /* height: auto; */
+  border-radius: 2rem;
+  border: 2px solid var(--text-color);
+}
+
+.canvasPixelated {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.imageContainer:hover .canvasPixelated {
+  opacity: 0;
+}
+/* after Hero/Intro section  */
+
+/* FOR GRID LINES ON GRID WITHOUT GAP >>>
+
+
+.grid3 div {
+  border-left: 2px solid var(--text-color);
+  border-top: 2px solid var(--text-color);
+  padding: 1rem;
+}
+
+.grid3 div:nth-child(3n) {
+  border-right: 2px solid var(--text-color);
+}
+
+.grid3 > *:nth-last-child(-n + 3) {
+  border-bottom: 2px solid var(--text-color);
+} */
+
+button.cta {
+  margin: 0rem 0 2rem 0;
+  width: fit-content;
+  background-color: var(--button-bg);
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  border: 2px solid var(--button-text);
+  transform: translate(10px, 10px);
+  box-shadow: 0px 0px black;
+}
+
+/* //stop it growing on hover as other buttons  */
+button.cta:hover {
+  width: fit-content;
+  height: auto;
+  border: 2px solid var(--link-color);
+  background-color: var(--button-bg-hov);
+  transform: translate(2px, 2px);
+  box-shadow: 8px 8px black;
+}
+
+button.cta a {
+  font-weight: 900;
+  font-family: "Pixelify Sans";
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+/* DESKTOP */
+@media screen and (min-width: 889px) {
+  .aboutWrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    /* margin-bottom: 4rem; */
+  }
+  .aboutBio {
+    font-size: 2rem;
+    /* height: 350px; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .aboutBio p {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+
+  .aboutBio strong {
+    font-size: 1.8rem;
+  }
+
+  .imageContainer {
+    width: 450px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    border-radius: 2rem;
+  }
+  .canvasContainer {
+    width: 450px;
+    height: 350px;
+  }
+
+  button.cta {
+    margin: 2rem 0 2rem 0;
+  }
+}
