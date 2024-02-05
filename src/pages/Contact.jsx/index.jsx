@@ -61,21 +61,21 @@ const Contact = () => {
               forward to hearing from you 🙂.
             </p>
           </div>
-          <div>
+          <div className="nameFeild">
             <label htmlFor="name">
               <p>Name:</p>
             </label>
             <input type="text" id="name" name="name" required />
             <p>{errors.name}</p>
           </div>
-          <div>
+          <div className="emailFeild">
             <label htmlFor="email">
               <p>Email:</p>
             </label>
             <input type="email" id="email" name="email" required />
             <p>{errors.email}</p>
           </div>
-          <div>
+          <div className="msgFeild">
             <label htmlFor="message">
               <p>Message:</p>
             </label>

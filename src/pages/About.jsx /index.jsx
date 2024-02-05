@@ -13,14 +13,18 @@ const About = () => {
           representative as it can be -we want to change that for our generation
           and generations to come. Our aim is to provide a space where members
           can:
-          <p>⭐ Be their authentic selves</p>
-          <p>⭐ Be their authentic selves</p>
-          <p>⭐ Cultivate genuine connections</p>
+          <p>Be their authentic selves</p>
+          <p>Be their authentic selves</p>
+          <p>Cultivate genuine connections</p>
           <p>
             Up-skill personally and professionally Join us for our URL and IRL
             events!
           </p>
         </p>
+        <h3>
+          Our Community platform is being developeped, but for now please visit
+          our <a href="">Linkedin!</a>
+        </h3>
       </div>
     </>
   );
