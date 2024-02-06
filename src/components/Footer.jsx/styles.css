@@ -37,6 +37,10 @@
   height: auto;
 }
 
+.footerLink.copywrite p {
+  margin: 1rem 0;
+}
+
 /* .footerLink.insta {
   justify-content: flex-start;
 }

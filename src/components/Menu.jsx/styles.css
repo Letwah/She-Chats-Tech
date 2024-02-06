@@ -41,7 +41,7 @@ button {
   aspect-ratio: 1 / 1;
   translate: -50% -50%;
   height: 80px;
-  background: #c6c2ff;
+  background: var(--menu-bg-color);
   border-radius: 10%;
   opacity: 0;
   transition: 0.6s;
@@ -97,7 +97,7 @@ body .menu nav > a:hover {
 .menu a {
   padding: 20px 0 20px 20px;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   opacity: 0;
   display: block;
   /* cursor: none; */

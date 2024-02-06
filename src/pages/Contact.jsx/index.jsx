@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { validate } from "../../validation";
-// import { useDispatch } from "react-redux";
 import { API_KEY } from "../../key";
+import { ReactSVG } from "react-svg";
+
+import zigzagIcon from "../../assets/icons/lightening.svg";
+import mailIcon from "../../assets/icons/Envelope.svg";
 
 import "./styles.css";
 
 const Contact = () => {
-  // const dispatch = useDispatch();
   const [errors, setErrors] = useState({});
   const [userInput, setUserInput] = useState({});
   const [submitted, setSubmitted] = useState(false);
@@ -27,7 +29,7 @@ const Contact = () => {
           body: formData,
         });
         console.log(response);
-        // dispatch(setToastContent("Thanks for getting in touch!"));
+
         setSubmitted(true);
       } catch (error) {
         console.log(error);
@@ -37,13 +39,12 @@ const Contact = () => {
   };
 
   if (submitted) {
-    return <p>Thanks for getting in touch!</p>;
+    return <h1>Thanks for getting in touch!</h1>;
   }
 
   return (
     <>
       <div className="contactWrapper">
-        <h1>CONTACT</h1>
         <form
           onInput={(e) => {
             setUserInput({ ...userInput, [e.target.name]: e.target.value });
@@ -51,15 +52,13 @@ const Contact = () => {
           onSubmit={handleSubmit}
         >
           <div className="contactText">
-            <h3>Please fill in the form below 🙌</h3>
-            <p>
-              Alternatively if you would rather just get in touch via{" "}
-              <a href="mailto:hello@colettesmith.com">email</a> or{" "}
-              <a href="tel:+44 7963 470 269">ring</a> please do. For a copy of
-              my cv please click{" "}
-              <a href="./assets/Colette_Smith_CV_2023.pdf">here</a>. I look
-              forward to hearing from you 🙂.
-            </p>
+            <div className="contactHeading">
+              <ReactSVG src={zigzagIcon} />
+              <h2>Get in Touch</h2>
+              <ReactSVG src={mailIcon} />
+            </div>
+
+            <h3>Please fill in the form below</h3>
           </div>
           <div className="nameFeild">
             <label htmlFor="name">
@@ -82,14 +81,12 @@ const Contact = () => {
             <textarea id="message" name="message" required />
             <p>{errors.message}</p>
           </div>
-          <button type="submit">Submit</button>
-          {/* Dont need this message cos of toastify ....
-      
-      <div className="contactMsg">
-        <p>
-          Jimmy will get back to you asap! <br></br>Thanks for getting in touch.
-        </p>
-      </div> */}
+          <div className="formButton">
+            <button type="submit">Submit</button>
+          </div>
+          <div className="disclaimer">
+            <h3>FYI - We won&apos;t share your details!</h3>
+          </div>
         </form>
       </div>
     </>

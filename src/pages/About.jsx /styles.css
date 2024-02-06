@@ -4,30 +4,26 @@
 }
 
 .aboutPageWrapper {
-  margin-top: 6rem;
+  margin-top: 8rem;
 }
 
-/* .imageContainer > img {
-  max-width: 400px;
-} */
-
-/* //animated blob image */
-
-/* .animatedBlob {
-  width: 380px;
-  height: 380px;
-  margin: 20px;
-  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
-  animation: liquidBlob 5s ease-in-out infinite;
-  transition: all 1s ease-in-out;
+.aboutPageWrapper a {
+  padding-left: 0.5rem;
 }
 
-@keyframes liquidBlob {
-  0%,
-  100% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+.aboutPageWrapper h2 strong {
+  font-size: 1.5rem;
+}
+
+.aboutPageWrapper img {
+  max-width: 85vw;
+  margin: 0 auto 2rem;
+  border-radius: 1rem;
+  border: 2px solid var(--text-color);
+}
+
+@media screen and (min-width: 889px) {
+  .aboutPageWrapper img {
+    max-width: 75vw;
   }
-  50% {
-    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-  }
-} */
+}

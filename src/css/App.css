@@ -12,24 +12,8 @@
 }
 
 @font-face {
-  font-family: "DM Serif Display";
-  src: url("../assets/fonts/DMSerifDisplay-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Tan Ashford";
   src: url("../assets/fonts/TAN-ASHFORD.woff2") format("woff2");
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Pixelify Sans";
-  src: url("../assets/fonts/PixelifySans-VariableFont_wght.woff2")
-    format("woff2");
   font-display: swap;
   font-style: normal;
 }
@@ -58,42 +42,57 @@
   --overlay-color: #b288ff7d;
   --cursor-color: #1a1a1a;
   --cursor-link-color: #ffa114;
+  --swiper-card-bg: #f1f1f1;
 
   /* --cursor-link-color: #ff5f1f; */
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #161616;
+    --background-bold-gradient: radial-gradient(
+      95.68% 64.82% at 54.79% 50%,
+      #0c0554 0%,
+      #b288ff 100%
+    );
+    --background-color: #0c0554;
     --transparent-bg: #fffff80f;
     --text-color: #f1f1f1;
-    --menu-bg-color: #786fe1;
-    /* --link-dec: #161616;*/
+    --menu-bg-color: #0c0554;
+   
+    --button-bg: #c7ff7e;
+
     --link-color: #c7ff7e;
-    --button-bg-hov: #786fe1;
-    --button-text: #f1f1f1;
-    --overlay-color: #fffff8a5;
+
+    --button-bg-hov: #ffa114;
+    --button-text: #0c0554;
+    --overlay-color: #786fe174;
+    --cursor-color: #f1f1f1;
+    --cursor-link-color: #ffa114;
+    --swiper-card-bg: #786fe1bc;
   }
 
   html {
     color-scheme: dark;
   }
 
-  .icons img {
+  .icons img,
+  .logo,
+  button.burger,
+  .footerLink svg {
     filter: invert(1);
   }
-}
 
-/* body {
-  cursor: url("../assets/cursors/cursor.png") 0 0, auto;
-}
+  button.burger:hover {
+    background-color: #c7ff7e;
+  }
 
-a:hover {
-  cursor: url("../assets/cursors/cursorLink.png") 0 0, pointer;
-}
+  .background.open {
+    opacity: 1 !important;
+  }
 
-div.swiper {
-  cursor: url("../assets/cursors/cursorHi.png") 0 0, grab !important;
+  .imageContainer::after {
+    fill: #e16fc8;
+  }
 } */
 
 html {
@@ -124,7 +123,10 @@ body {
 }
 
 p {
-  line-height: 2.2rem;
+  line-height: 1.8rem;
+  margin-top: 0;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 h1,
@@ -152,7 +154,7 @@ h3 {
 
 h4 {
   text-transform: uppercase;
-  font-family: "Pixelify Sans";
+  font-family: "Space Grotesk";
   color: var(--text-color);
 }
 strong {
@@ -166,7 +168,7 @@ a {
 
 nav a {
   color: var(--text-color);
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 600;
   font-size: 4rem;
 }
@@ -202,7 +204,7 @@ button:hover {
   margin-top: 6rem;
   align-items: center !important;
   row-gap: 2rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 @media screen and (min-width: 889px) {

@@ -1,0 +1,53 @@
+.swiperCard {
+  height: 25rem;
+  min-width: 12rem;
+  padding: 0.8rem;
+  background-color: var(--swiper-card-bg);
+  margin: 2rem 0.6rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.cardIcon {
+  /* content: "";
+  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain; */
+
+  bottom: 10%;
+  right: 8%;
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(15deg);
+  opacity: 1;
+
+  pointer-events: none;
+  z-index: 999;
+  position: absolute;
+  /* border: 0px solid transparent !important; */
+}
+
+.swiper-slide-active .cardIcon {
+  transform: rotate(-5deg);
+  transition: transform 1s ease-in-out;
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.details h2 {
+  font-size: 1.3rem;
+  margin: 0.4rem 0;
+}
+
+.details p {
+  font-size: 0.7rem;
+  margin: 0.2rem 0;
+  line-height: 1rem;
+}

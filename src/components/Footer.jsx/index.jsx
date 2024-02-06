@@ -1,5 +1,5 @@
 import { ReactSVG } from "react-svg";
-import { Link } from "react-router-dom";
+
 import instaIcon from "../../assets/icons/WIFI.svg";
 import linkedInIcon from "../../assets/icons/info.svg";
 
@@ -10,19 +10,43 @@ const Footer = () => {
     <>
       <div className="footerWrapper">
         <div className="footerLink insta">
-          <Link to="/">
-            <h4>Insta</h4>
+          <a
+            href="https://www.instagram.com/shechatstech/"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              textTransform: "uppercase",
+              fontFamily: '"Space Grotesk", sans-serif',
+              color: "var(--text-color)",
+              textDecoration: "none",
+              fontSize: "1em",
+              fontWeight: "bold",
+            }}
+          >
+            Insta
             <ReactSVG src={instaIcon} />
-          </Link>
+          </a>
         </div>
         <div className="footerLink copywrite">
           <p> © SHE CHATS TECH 2024</p>
         </div>
         <div className="footerLink linkedIn">
-          <Link to="/">
+          <a
+            href="https://https://www.linkedin.com/company/she-chats-tech/"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              textTransform: "uppercase",
+              fontFamily: '"Space Grotesk", sans-serif',
+              color: "var(--text-color)",
+              textDecoration: "none",
+              fontSize: "1em",
+              fontWeight: "bold",
+            }}
+          >
             <ReactSVG src={linkedInIcon} />
-            <h4>LinkedIn</h4>
-          </Link>
+            LinkedIn
+          </a>
         </div>
       </div>
     </>
