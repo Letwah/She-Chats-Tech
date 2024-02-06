@@ -6,6 +6,9 @@
 .aboutPageWrapper {
   margin-top: 8rem;
 }
+.aboutBanner {
+  display: flex;
+}
 
 .aboutPageWrapper a {
   padding-left: 0.5rem;
@@ -16,7 +19,7 @@
 }
 
 .aboutPageWrapper img {
-  max-width: 85vw;
+  width: 85vw;
   margin: 0 auto 2rem;
   border-radius: 1rem;
   border: 2px solid var(--text-color);
@@ -24,6 +27,6 @@
 
 @media screen and (min-width: 889px) {
   .aboutPageWrapper img {
-    max-width: 75vw;
+    width: 800px;
   }
 }

@@ -6,7 +6,14 @@ const About = () => {
   return (
     <>
       <div className="aboutPageWrapper">
-        <img key="LinkedIn_banner" src={linkedinBanner} alt="linkedin Banner" />
+        <div className="aboutBanner">
+          <img
+            key="LinkedIn_banner"
+            src={linkedinBanner}
+            alt="linkedin Banner"
+          />
+        </div>
+
         <h2>
           Welcome to <strong> She Chats Tech </strong> community.
         </h2>
