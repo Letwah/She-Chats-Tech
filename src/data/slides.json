@@ -1,50 +1,50 @@
 [
   {
     "id": "Events",
-    "imageUrl": "./src/assets/carouselImages/events.gif",
-    "pseudoImageUrl": "./src/assets/icons/Calendar.svg",
+    "imageUrl": "./assets/carouselImages/events.gif",
+    "pseudoImageUrl": "./assets/icons/Calendar.svg",
     "title": "Talks + Events",
     "description": "Read about our in-person event with Founders and Coders."
   },
   {
     "id": "Feed",
-    "imageUrl": "./src/assets/carouselImages/WOSR.gif",
-    "pseudoImageUrl": "./src/assets/icons/Wifi.svg",
+    "imageUrl": "./assets/carouselImages/WOSR.gif",
+    "pseudoImageUrl": "./assets/icons/Wifi.svg",
     "title": "News Feed",
     "description": "Connect with us on Instagram."
   },
   {
     "id": "Tips",
-    "imageUrl": "./src/assets/carouselImages/TipsforSuccess.gif",
-    "pseudoImageUrl": "./src/assets/icons/lightening.svg",
+    "imageUrl": "./assets/carouselImages/TipsforSuccess.gif",
+    "pseudoImageUrl": "./assets/icons/lightening.svg",
     "title": "Tips",
     "description": "Tips for Success."
   },
   {
     "id": "Inspiration",
-    "imageUrl": "./src/assets/carouselImages/inspo.png",
-    "pseudoImageUrl": "./src/assets/icons/Info.svg",
+    "imageUrl": "./assets/carouselImages/inspo.png",
+    "pseudoImageUrl": "./assets/icons/Info.svg",
     "title": "Inspiration",
     "description": "For when your mind goes blank"
   },
   {
     "id": "Save",
-    "imageUrl": "./src/assets/carouselImages/image_5.png",
-    "pseudoImageUrl": "./src/assets/icons/File.svg",
+    "imageUrl": "./assets/carouselImages/image_5.png",
+    "pseudoImageUrl": "./assets/icons/File.svg",
     "title": "Save for Later",
     "description": "Keep this post"
   },
   {
     "id": "Tech",
-    "imageUrl": "./src/assets/carouselImages/help.png",
-    "pseudoImageUrl": "./src/assets/icons/Computer.svg",
+    "imageUrl": "./assets/carouselImages/help.png",
+    "pseudoImageUrl": "./assets/icons/Computer.svg",
     "title": "Help + Advice",
     "description": "When you need some help."
   },
   {
     "id": "Members",
-    "imageUrl": "./src/assets/carouselImages/profileFeature.gif",
-    "pseudoImageUrl": "./src/assets/icons/Flame.svg",
+    "imageUrl": "./assets/carouselImages/profileFeature.gif",
+    "pseudoImageUrl": "./assets/icons/Flame.svg",
     "title": "Featured Members",
     "description": "Read about some of our members."
   }
