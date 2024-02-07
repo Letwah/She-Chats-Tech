@@ -8,8 +8,9 @@
 }
 
 .contactWrapper {
-  margin-top: 8rem;
-  margin-bottom: 6rem;
+  margin: 8vw 4vw;
+  overflow-y: scroll;
+  padding: 8vh 0;
 }
 
 .contactWrapper h2 {
@@ -57,7 +58,7 @@ form::after {
   background-repeat: no-repeat;
 
   margin: 2rem auto 0;
-  z-index: 99;
+  z-index: 7;
   width: 80vw;
   height: 10vh;
   opacity: 0.6;
@@ -137,4 +138,11 @@ textarea::-webkit-resizer {
   text-align: center;
   font-size: 0.5rem;
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 889px) {
+  .contactWrapper {
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+  }
 }

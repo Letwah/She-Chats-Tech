@@ -14,7 +14,7 @@
   left: 0;
   height: 80px;
   width: 100vw;
-  z-index: 1;
+  z-index: 8;
   border-bottom: 2px solid var(--text-color);
   /* opacity: 0.7;
   backdrop-filter: blur(3px); */
@@ -22,7 +22,7 @@
 
 /* Logo Styling */
 .logo svg {
-  width: 350px;
+  width: 220px;
   height: auto;
 }
 
@@ -34,15 +34,26 @@
 }
 
 /* Logo Transformation on Scroll */
-.logo.shrink-logo {
-  transform: translateX(42vw) translateY(-10px) scale(0.25);
-}
-
 .header.fixed-header {
   background-color: var(--button-bg-hov);
 }
 
+.logo.shrink-logo {
+  transform: translateX(38vw) translateY(-4px) scale(0.35);
+}
+
+@media screen and (min-width: 500px) {
+  .logo.shrink-logo {
+    transform: translateX(42vw) translateY(-10px) scale(0.25);
+  }
+}
+
 @media screen and (min-width: 800px) {
+  .logo svg {
+    width: 350px;
+    height: auto;
+  }
+
   .logo.shrink-logo {
     transform: translateX(44vw) translateY(-10px) scale(0.25);
   }

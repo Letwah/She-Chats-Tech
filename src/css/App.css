@@ -114,12 +114,12 @@ body {
   padding: 0;
   text-rendering: optimizeLegibility;
   max-width: 1220px;
-  min-width: 450px;
+  min-width: 320px;
   -webkit-font-smoothing: antialiased;
 }
 
 .App {
-  margin: 0 2rem;
+  margin: 0 auto;
 }
 
 p {
@@ -201,14 +201,19 @@ button:hover {
 .intro {
   display: flex;
   flex-direction: column;
-  margin-top: 6rem;
+  margin: 4rem 2rem;
   align-items: center !important;
   row-gap: 2rem;
   /* text-align: center; */
 }
 
 @media screen and (min-width: 889px) {
+  .App {
+    margin: 0 2vw;
+  }
+
   .intro {
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start !important;

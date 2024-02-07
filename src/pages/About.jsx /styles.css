@@ -4,8 +4,11 @@
 }
 
 .aboutPageWrapper {
-  margin-top: 8rem;
+  margin: 8vw 4vw;
+  overflow-y: scroll;
+  padding: 8vh 0;
 }
+
 .aboutBanner {
   display: flex;
 }
@@ -28,5 +31,8 @@
 @media screen and (min-width: 889px) {
   .aboutPageWrapper img {
     width: 800px;
+  }
+  .aboutPageWrapper {
+    margin: 8rem 4vw;
   }
 }

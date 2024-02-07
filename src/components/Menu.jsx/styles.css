@@ -17,7 +17,7 @@ button {
 }
 
 .burger {
-  z-index: 4;
+  z-index: 15;
   top: 0;
   left: 0;
   display: grid;
@@ -35,7 +35,7 @@ button {
 
 .background {
   position: fixed;
-  z-index: 2;
+  z-index: 12;
   top: 44px;
   left: 44px;
   aspect-ratio: 1 / 1;
@@ -54,14 +54,14 @@ button {
 }
 
 .menu {
-  z-index: 3;
+  z-index: 13;
   top: 0;
   left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   opacity: 0;
   visibility: hidden;
   transition: 0.05s;

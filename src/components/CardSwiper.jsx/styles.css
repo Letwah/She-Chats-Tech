@@ -1,6 +1,5 @@
 /* swiper styles */
 .swiper {
-  overflow: visible !important;
   margin-top: 6rem;
   margin-bottom: 4rem;
 }
@@ -31,4 +30,11 @@
 
 .swiper-slide-active {
   filter: none;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 889px) {
+  .swiper {
+    overflow: visible !important;
+  }
 }

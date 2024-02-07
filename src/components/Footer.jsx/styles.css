@@ -10,7 +10,7 @@
   left: 0;
   background-color: var(--button-bg-hov);
   opacity: 1;
-  z-index: 1;
+  z-index: 9;
   padding: 0 2vw;
 }
 
@@ -39,16 +39,12 @@
 
 .footerLink.copywrite p {
   margin: 1rem 0;
+  font-size: 0.5rem;
 }
 
-/* .footerLink.insta {
-  justify-content: flex-start;
+/* DESKTOP */
+@media screen and (min-width: 889px) {
+  .footerLink.copywrite p {
+    font-size: 1rem;
+  }
 }
-
-.footerLink.copywrite {
-  justify-content: center;
-}
-
-.footerLink.linkedIn {
-  justify-content: flex-end;
-} */

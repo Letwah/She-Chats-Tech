@@ -1,5 +1,5 @@
 .swiperCard {
-  height: 25rem;
+  height: 22rem;
   min-width: 12rem;
   padding: 0.8rem;
   background-color: var(--swiper-card-bg);
@@ -10,21 +10,15 @@
 }
 
 .cardIcon {
-  /* content: "";
-  
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain; */
-
-  bottom: 10%;
-  right: 8%;
+  bottom: 5%;
+  right: 5%;
   width: 2rem;
   height: 2rem;
   transform: rotate(15deg);
   opacity: 1;
 
   pointer-events: none;
-  z-index: 999;
+  z-index: 9;
   position: absolute;
   /* border: 0px solid transparent !important; */
 }
@@ -50,4 +44,18 @@
   font-size: 0.7rem;
   margin: 0.2rem 0;
   line-height: 1rem;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 889px) {
+  .swiperCard {
+    height: 25rem;
+  }
+
+  .cardIcon {
+    bottom: 10%;
+    right: 8%;
+    width: 2rem;
+    height: 2rem;
+  }
 }
