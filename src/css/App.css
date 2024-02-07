@@ -209,7 +209,7 @@ button:hover {
 .intro {
   display: flex;
   flex-direction: column;
-  margin: 6rem 2rem;
+  margin: 6rem 2rem 4rem;
   align-items: center !important;
   row-gap: 2rem;
   /* text-align: center; */
