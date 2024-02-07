@@ -144,5 +144,6 @@ textarea::-webkit-resizer {
   .contactWrapper {
     margin-top: 8rem;
     margin-bottom: 6rem;
+    padding: 4vh 0;
   }
 }

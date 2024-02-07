@@ -12,7 +12,13 @@ const Intro = () => {
           aspiring to be and women in tech from non-tech backgrounds.
         </h1>
         <button className="cta">
-          <a href="/contact">Sign Up</a>
+          <a
+            href="https://https://www.linkedin.com/company/she-chats-tech/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Sign Up
+          </a>
         </button>
       </div>
       <div className="aboutWrapper">
