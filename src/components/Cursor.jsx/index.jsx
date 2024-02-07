@@ -4,8 +4,12 @@ import "./styles.css";
 const Cursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hoverClass, setHoverClass] = useState("");
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
+    //disable mouse on touchscreen
+    setIsTouchDevice("ontouchstart" in window || navigator.maxTouchPoints > 0);
+
     const updatePosition = (e) => {
       setPosition({ x: e.clientX - 10, y: e.clientY - 10 });
     };
@@ -19,17 +23,23 @@ const Cursor = () => {
         setHoverClass("");
       }
     };
-
-    document.addEventListener("mousemove", updatePosition);
-    document.addEventListener("mouseover", handleMouseInteraction);
-    document.addEventListener("mouseout", handleMouseInteraction);
+    if (!isTouchDevice) {
+      document.addEventListener("mousemove", updatePosition);
+      document.addEventListener("mouseover", handleMouseInteraction);
+      document.addEventListener("mouseout", handleMouseInteraction);
+    }
 
     return () => {
-      document.removeEventListener("mousemove", updatePosition);
-      document.removeEventListener("mouseover", handleMouseInteraction);
-      document.removeEventListener("mouseout", handleMouseInteraction);
+      if (!isTouchDevice) {
+        document.removeEventListener("mousemove", updatePosition);
+        document.removeEventListener("mouseover", handleMouseInteraction);
+        document.removeEventListener("mouseout", handleMouseInteraction);
+      }
     };
-  }, []);
+  }, [isTouchDevice]);
+
+  if (isTouchDevice) return null;
+
   return (
     <div
       className={`cursor ${hoverClass}`}
