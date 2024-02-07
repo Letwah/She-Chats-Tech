@@ -33,6 +33,7 @@
     width: 800px;
   }
   .aboutPageWrapper {
-    margin: 8rem 4vw;
+    max-width: 1440px;
+    margin: 3rem auto 1rem;
   }
 }

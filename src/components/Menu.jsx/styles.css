@@ -16,15 +16,20 @@ button {
   left: 0;
   display: grid;
   place-items: center;
-  width: 80px;
-  height: 80px;
+
   background-image: url("../../assets/images/zap_menu.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 40%;
+  width: 50px;
+  height: 50px;
 }
 
 .burger.open {
   background-image: url("../../assets/images/zap_close.svg");
+  background-size: 40%;
+  width: 50px;
+  height: 50px;
 }
 
 .background {
@@ -34,7 +39,7 @@ button {
   left: 44px;
   aspect-ratio: 1 / 1;
   translate: -50% -50%;
-  height: 80px;
+  height: 50px;
   background: var(--menu-bg-color);
   border-radius: 10%;
   opacity: 0;
@@ -130,4 +135,20 @@ body .menu nav > a:hover {
   transition: transform 0.3s ease;
   transform-origin: center;
   display: inline-block;
+}
+
+.burger {
+  background-size: 70%;
+  width: 70px;
+  height: 70px;
+}
+
+.burger.open {
+  background-size: 70%;
+  width: 70px;
+  height: 70px;
+}
+
+.background {
+  height: 70px;
 }

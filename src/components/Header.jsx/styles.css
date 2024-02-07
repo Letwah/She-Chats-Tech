@@ -12,7 +12,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 80px;
+  height: 72px;
   width: 100vw;
   z-index: 8;
   border-bottom: 2px solid var(--text-color);
@@ -44,7 +44,7 @@
 
 @media screen and (min-width: 500px) {
   .logo.shrink-logo {
-    transform: translateX(42vw) translateY(-10px) scale(0.25);
+    transform: translateX(42vw) translateY(-10px) scale(0.3);
   }
 }
 

@@ -120,7 +120,7 @@ body {
   margin: 6vw auto;
   padding: 0;
   text-rendering: optimizeLegibility;
-  max-width: 1220px;
+  /* max-width: 1440px; */
   min-width: 320px;
   -webkit-font-smoothing: antialiased;
 }
@@ -178,7 +178,8 @@ nav a {
   color: var(--text-color);
   font-family: "Space Grotesk", sans-serif;
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 2.5rem;
+  line-height: 2rem;
 }
 
 * {
@@ -198,8 +199,8 @@ button {
 button:hover {
   background-color: var(--menu-bg-color);
   color: var(--link-color);
-  height: 78px;
-  width: 78px;
+  /* height: 78px;
+  width: 78px; */
 }
 
 /* LAYOUT */
@@ -210,18 +211,25 @@ button:hover {
   display: flex;
   flex-direction: column;
   margin: 6rem 2rem 4rem;
-  align-items: center !important;
+
   row-gap: 2rem;
   /* text-align: center; */
 }
 
 @media screen and (min-width: 889px) {
-  .App {
+  /* .App {
     margin: 0 2vw;
+  } */
+
+  nav a {
+    font-size: 4rem;
+    line-height: 3.5rem;
   }
 
   .intro {
-    margin-top: 6rem;
+    max-width: 1440px;
+    margin: 6rem auto 1rem;
+    padding: 0 2vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start !important;

@@ -99,11 +99,13 @@
 }
 
 button.cta {
-  margin: 0rem 0 2rem 0;
+  padding: 0.6rem 1.2rem;
+  border-radius: 1.5rem;
+
+  /* margin: 0rem 0 2rem 0; */
   width: fit-content;
   background-color: var(--button-bg);
-  padding: 1rem 4rem;
-  border-radius: 2rem;
+
   border: 2px solid var(--button-text);
   transform: translate(10px, 10px);
   box-shadow: 0px 0px black;
@@ -135,7 +137,7 @@ button.cta:hover {
 button.cta a {
   font-weight: 900;
   font-family: "Space Grotesk";
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--button-text);
 }
 
@@ -153,13 +155,14 @@ button.cta a {
 @media screen and (min-width: 889px) {
   .aboutWrapper {
     display: flex;
-
+    max-width: 1440px;
+    margin: 3rem auto 1rem;
+    padding: 0 2vw;
     flex-direction: row;
     align-items: center;
     justify-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    margin: 0 2vw -2vh 2vw;
     display: flex;
   }
 
@@ -184,13 +187,13 @@ button.cta a {
 
   .aboutWrapper {
     display: flex;
-
+    max-width: 1440px;
+    margin: 3rem auto 1rem;
     flex-direction: row;
     align-items: center;
     justify-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    margin: 0 2vw -2vh 2vw;
     display: flex;
   }
 
@@ -229,6 +232,13 @@ button.cta a {
   }
 
   button.cta {
-    margin: 2rem 0 2rem 0;
+    /* margin: 2rem 0 2rem 0; */
+    font-size: 1.5rem;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+  }
+
+  button.cta a {
+    font-size: 1.5rem;
   }
 }
