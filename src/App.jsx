@@ -17,6 +17,7 @@ import Cursor from "./components/Cursor.jsx";
 const App = () => {
   const dispatch = useDispatch();
   const page = useSelector(selectPage);
+
   const getInitialData = async () => {
     console.log(page);
     dispatch(setPage());
@@ -29,6 +30,7 @@ const App = () => {
   return (
     <>
       <div className="App">
+        <Cursor />
         <Header />
         <Menu />
 
@@ -38,7 +40,6 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
 
-        <Cursor />
         <Footer />
       </div>
     </>

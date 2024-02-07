@@ -42,6 +42,17 @@
   /* --cursor-link-color: #ff5f1f; */
 }
 
+@media only screen and (max-width: 420px) {
+  html,
+  body {
+    cursor: none;
+  }
+  html *,
+  body * {
+    cursor: none;
+  }
+}
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background-bold-gradient: radial-gradient(

@@ -13,7 +13,7 @@ const Intro = () => {
         </h1>
         <button className="cta">
           <a
-            href="https://https://www.linkedin.com/company/she-chats-tech/"
+            href="https://www.linkedin.com/company/she-chats-tech/"
             target="_blank"
             rel="noreferrer"
           >
