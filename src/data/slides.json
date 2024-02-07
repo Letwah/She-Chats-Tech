@@ -9,7 +9,7 @@
   {
     "id": "Feed",
     "imageUrl": "./assets/carouselImages/WOSR.gif",
-    "pseudoImageUrl": "./assets/icons/Wifi.svg",
+    "pseudoImageUrl": "./assets/icons/WIFI.svg",
     "title": "News Feed",
     "description": "Connect with us on Instagram."
   },
