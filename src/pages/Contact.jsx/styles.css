@@ -7,6 +7,16 @@
   }
 }
 
+@keyframes waveAnimation {
+  0%,
+  100% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
 .contactWrapper {
   margin: 6vw auto 4vw;
   overflow-y: scroll;
@@ -139,6 +149,21 @@ textarea::-webkit-resizer {
   text-align: center;
   font-size: 0.5rem;
   margin-bottom: 0;
+}
+
+.thanksMsg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.smiley {
+  width: 200px;
+  height: auto;
+  padding-top: 5rem;
+  animation: waveAnimation 5s linear infinite;
 }
 
 @media screen and (min-width: 889px) {

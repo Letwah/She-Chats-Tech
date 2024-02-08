@@ -5,6 +5,7 @@ import { ReactSVG } from "react-svg";
 
 import zigzagIcon from "../../assets/icons/lightening.svg";
 import mailIcon from "../../assets/icons/Envelope.svg";
+import smileIcon from "../../assets/icons/smily.svg";
 
 import "./styles.css";
 
@@ -39,7 +40,14 @@ const Contact = () => {
   };
 
   if (submitted) {
-    return <h1>Thanks for getting in touch!</h1>;
+    return (
+      <div className="thanksMsg">
+        <h1>Thanks for getting in touch!</h1>
+        <div className="smiley">
+          <ReactSVG src={smileIcon} />
+        </div>
+      </div>
+    );
   }
 
   return (
