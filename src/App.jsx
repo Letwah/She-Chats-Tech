@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useCallback, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { selectPage, setPage } from "./redux/appSlice";
@@ -13,23 +13,27 @@ import Header from "./components/Header.jsx";
 import Menu from "./components/Menu.jsx";
 import Footer from "./components/Footer.jsx";
 import Cursor from "./components/Cursor.jsx";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   const dispatch = useDispatch();
   const page = useSelector(selectPage);
 
-  const getInitialData = async () => {
+  // useCallback to memoize getInitialData
+
+  const getInitialData = useCallback(async () => {
     console.log(page);
     dispatch(setPage());
-  };
+  }, [dispatch, page]);
 
   useEffect(() => {
     getInitialData();
-  });
+  }, [getInitialData]);
 
   return (
     <>
       <div className="App">
+        <ScrollToTop />
         <Cursor />
         <Header />
         <Menu />
