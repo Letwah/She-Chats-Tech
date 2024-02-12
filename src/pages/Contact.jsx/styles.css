@@ -24,7 +24,11 @@
 }
 
 .contactWrapper h2 {
+  margin: 0;
   font-family: "Tan Ashford";
+}
+.contactWrapper h3 {
+  margin: 0.8rem;
 }
 
 form {
@@ -66,10 +70,9 @@ form::after {
   background: url("../../assets/images/Clouds.svg") no-repeat center center;
   background-size: contain;
   background-repeat: no-repeat;
-
-  margin: 2rem auto 0;
+  margin: 1rem 0 -1rem 0;
   z-index: 7;
-  width: 80vw;
+  width: 100%;
   height: 10vh;
   opacity: 0.6;
   animation: slideAcross 20s linear infinite;
