@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { validate } from "../../validation";
-import { API_KEY } from "../../key";
+
 import { ReactSVG } from "react-svg";
 
 import zigzagIcon from "../../assets/icons/lightening.svg";
@@ -18,7 +18,7 @@ const Contact = () => {
     e.preventDefault();
 
     const formData = new FormData(e.target);
-    formData.append("access_key", API_KEY);
+    formData.append("access_key", import.meta.env.VITE_API_KEY);
     const res = await validate(userInput, "contactForm");
 
     console.log(res);
