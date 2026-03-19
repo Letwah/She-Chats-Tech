@@ -68,7 +68,7 @@
   left: -2rem;
   width: 5rem;
   height: 5rem;
-  background-image: url("../../assets/icons/EmptyStar.svg");
+  background-image: url("../../assets/icons/emptystar.svg");
   background-size: cover;
   animation: spin 8s infinite alternate;
 }

@@ -1,4 +1,4 @@
-import marqueeIcon from "../../assets/icons/Sunnies.svg";
+import marqueeIcon from "../../assets/icons/sunnies.svg";
 import "./styles.css";
 
 const Marquee = () => {

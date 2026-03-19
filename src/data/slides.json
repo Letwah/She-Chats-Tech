@@ -2,14 +2,14 @@
   {
     "id": "Events",
     "imageUrl": "./assets/carouselImages/events.gif",
-    "pseudoImageUrl": "./assets/icons/Calendar.svg",
+    "pseudoImageUrl": "./assets/icons/calendar.svg",
     "title": "Talks + Events",
     "description": "Read about our in-person event with Founders and Coders."
   },
   {
     "id": "Feed",
     "imageUrl": "./assets/carouselImages/WOSR.gif",
-    "pseudoImageUrl": "./assets/icons/WIFI.svg",
+    "pseudoImageUrl": "./assets/icons/wifi.svg",
     "title": "News Feed",
     "description": "Connect with us on Instagram."
   },
@@ -23,28 +23,28 @@
   {
     "id": "Inspiration",
     "imageUrl": "./assets/carouselImages/inspo.png",
-    "pseudoImageUrl": "./assets/icons/Info.svg",
+    "pseudoImageUrl": "./assets/icons/info.svg",
     "title": "Inspiration",
     "description": "For when your mind goes blank"
   },
   {
     "id": "Save",
     "imageUrl": "./assets/carouselImages/image_5.png",
-    "pseudoImageUrl": "./assets/icons/File.svg",
+    "pseudoImageUrl": "./assets/icons/file.svg",
     "title": "Save for Later",
     "description": "Keep this post"
   },
   {
     "id": "Tech",
     "imageUrl": "./assets/carouselImages/help.png",
-    "pseudoImageUrl": "./assets/icons/Computer.svg",
+    "pseudoImageUrl": "./assets/icons/computer.svg",
     "title": "Help + Advice",
     "description": "When you need some help."
   },
   {
     "id": "Members",
     "imageUrl": "./assets/carouselImages/profileFeature.gif",
-    "pseudoImageUrl": "./assets/icons/Flame.svg",
+    "pseudoImageUrl": "./assets/icons/flame.svg",
     "title": "Featured Members",
     "description": "Read about some of our members."
   }

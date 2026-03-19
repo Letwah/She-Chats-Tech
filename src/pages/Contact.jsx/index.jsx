@@ -4,7 +4,7 @@ import { validate } from "../../validation";
 import { ReactSVG } from "react-svg";
 
 import zigzagIcon from "../../assets/icons/lightening.svg";
-import mailIcon from "../../assets/icons/Envelope.svg";
+import mailIcon from "../../assets/icons/envelope.svg";
 import smileIcon from "../../assets/icons/smily.svg";
 
 import "./styles.css";
