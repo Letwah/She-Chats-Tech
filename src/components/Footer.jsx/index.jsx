@@ -1,7 +1,7 @@
 import { ReactSVG } from "react-svg";
 
 import instaIcon from "../../assets/icons/WIFI.svg";
-import linkedInIcon from "../../assets/icons/info.svg";
+import linkedInIcon from "../../assets/icons/Info.svg";
 
 import "./styles.css";
 
