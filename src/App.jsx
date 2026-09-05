@@ -5,14 +5,14 @@ import { selectPage, setPage } from "./redux/appSlice";
 
 import "./css/App.css";
 
-import Landing from "./pages/Landing.jsx";
-import About from "./pages/About.jsx ";
-import Contact from "./pages/Contact.jsx";
+import Landing from "./pages/Landing";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
-import Header from "./components/Header.jsx";
-import Menu from "./components/Menu.jsx";
-import Footer from "./components/Footer.jsx";
-import Cursor from "./components/Cursor.jsx";
+import Header from "./components/Header";
+import Menu from "./components/Menu";
+import Footer from "./components/Footer";
+import Cursor from "./components/Cursor";
 import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
