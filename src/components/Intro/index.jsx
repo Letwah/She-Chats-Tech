@@ -1,4 +1,4 @@
-import PixelatedImage from "../PixelatedImage.jsx/index.jsx";
+import PixelatedImage from "../PixelatedImage";
 import highResPortrait from "../../assets/images/Em-crop-big.jpg";
 
 import "./styles.css";

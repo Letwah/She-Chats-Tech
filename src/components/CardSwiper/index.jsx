@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "./styles.css"; // Assuming your custom CSS is here
-import Card from "../Card.jsx";
+import Card from "../Card";
 import slidesData from "../../data/slides.json";
 
 function CardSwiper() {
